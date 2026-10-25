@@ -1,5 +1,7 @@
 # RFP Intelligence
 
+[![Tests](https://github.com/rahulsharmarallapalli-tech/agentic-rfp-evaluation/actions/workflows/tests.yml/badge.svg)](https://github.com/rahulsharmarallapalli-tech/agentic-rfp-evaluation/actions/workflows/tests.yml)
+
 An evidence-based supplier evaluation app built for the **Agentic RFP Evaluation and Supplier Ranking** mini project. Streamlit provides the interface, SQLite owns the criteria and saved results, Gemini judges proposal evidence, and Python owns all scoring and ranking.
 
 **Demo honesty:** the one-click offline demonstration uses explicitly human-authored scorecards for the four bundled PDFs. It still executes extraction, validation, scoring, benchmarking, ranking and persistence. Live evaluation is a separate mode requiring your own Gemini API key.
@@ -97,6 +99,8 @@ The demo writes `data/demo.sqlite` and [samples/completed_run.json](samples/comp
 Tests cover independently calculated formulas with unequal maxima, zero benchmarks, every tie-break level, unrounded sorting, malformed JSON, clipping, missing criteria, unknown IDs, invented evidence, invalid/encrypted PDFs, provider errors and retry bounds, database transactions and immutable snapshots, reproducible demo output, and Streamlit UI interactions. Provider calls are mocked; a real Gemini call needs a user-supplied key.
 
 See [the demo script](docs/DEMO.md) for a successful run and validation/error demonstration, and [rubric traceability](docs/RUBRIC.md) for the implementation mapped to all 100 marks.
+
+![Browser-verified malformed JSON rejection](docs/screenshots/validation.png)
 
 ## Streamlit Community Cloud deployment
 
