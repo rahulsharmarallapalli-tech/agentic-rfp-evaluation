@@ -1,0 +1,51 @@
+{
+  "supplier_name": "BrightPath Tech",
+  "criteria": [
+    {
+      "criterion_id": 1,
+      "score": 6,
+      "max_score": 10,
+      "justification": "Core functions are covered but ERP integration is batch-only and scale evidence is limited.",
+      "evidence": "A hosted web application will provide ticket queues, email ingestion and a standard CRM connector; ERP integration uses a nightly CSV export.",
+      "evidence_page": 1
+    },
+    {
+      "criterion_id": 2,
+      "score": 6,
+      "max_score": 10,
+      "justification": "A clear short schedule exists, but contingency and acceptance thresholds are missing.",
+      "evidence": "The proposed eight-week schedule allocates one week to discovery, four to configuration, two to testing and one to launch.",
+      "evidence_page": 2
+    },
+    {
+      "criterion_id": 3,
+      "score": 9,
+      "max_score": 10,
+      "justification": "Lowest transparent three-year price; exclusions should still be priced before award.",
+      "evidence": "Three-year total cost is USD 156,000, including a fixed implementation fee and three annual subscriptions.",
+      "evidence_page": 2
+    },
+    {
+      "criterion_id": 4,
+      "score": 3,
+      "max_score": 10,
+      "justification": "Only basic transport, backup and role controls are specified.",
+      "evidence": "The application uses HTTPS and daily backups; access is controlled by passwords and administrator-managed user roles.",
+      "evidence_page": 3
+    },
+    {
+      "criterion_id": 5,
+      "score": 4,
+      "max_score": 10,
+      "justification": "Business-hours response and small reference projects provide limited enterprise assurance.",
+      "evidence": "Support is provided on business days from 09:00 to 17:00, with a one-business-day response target.",
+      "evidence_page": 3
+    }
+  ],
+  "risks": [
+    "Security and compliance evidence is limited.",
+    "Aggressive timeline has no explicit contingency.",
+    "Limited experience at the requested scale."
+  ],
+  "overall_summary": "Lowest price and a short schedule, offset by limited compliance detail, integration depth and support coverage."
+}

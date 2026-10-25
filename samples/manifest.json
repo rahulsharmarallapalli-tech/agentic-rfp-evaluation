@@ -1,0 +1,34 @@
+[
+  {
+    "supplier_name": "Apex Systems",
+    "submission_date": "2026-10-20",
+    "experience_rating": 8,
+    "pdf_file": "apex_systems.pdf",
+    "evaluation_file": "apex_systems.json",
+    "sha256": "b41a7c7f36b9960730dddf52c59a429fd9309ab32538a47b52017f5925ad0352"
+  },
+  {
+    "supplier_name": "BrightPath Tech",
+    "submission_date": "2026-10-18",
+    "experience_rating": 3,
+    "pdf_file": "brightpath_tech.pdf",
+    "evaluation_file": "brightpath_tech.json",
+    "sha256": "4ae86538897feb74a6bcdb6ee4ef72e6dd3dfb6d37b854375329d284c9d28e4d"
+  },
+  {
+    "supplier_name": "NexaWorks",
+    "submission_date": "2026-10-19",
+    "experience_rating": 8,
+    "pdf_file": "nexaworks.pdf",
+    "evaluation_file": "nexaworks.json",
+    "sha256": "e0fd6fe16d68d45379bd22aaec542c09aca869406a0d5947cd2e867d3b567b8a"
+  },
+  {
+    "supplier_name": "Orbit Digital",
+    "submission_date": "2026-10-17",
+    "experience_rating": 9,
+    "pdf_file": "orbit_digital.pdf",
+    "evaluation_file": "orbit_digital.json",
+    "sha256": "203d6677ae21d01db4675121ea55ee48c3458536e4d60262bf21d6092cafbd8d"
+  }
+]

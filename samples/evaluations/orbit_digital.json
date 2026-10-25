@@ -1,0 +1,51 @@
+{
+  "supplier_name": "Orbit Digital",
+  "criteria": [
+    {
+      "criterion_id": 1,
+      "score": 5,
+      "max_score": 10,
+      "justification": "Core platform scope is stated, but integration methods and capacity targets are deferred.",
+      "evidence": "The proposal offers a configurable customer-service platform; CRM and ERP integration methods will be agreed during discovery.",
+      "evidence_page": 1
+    },
+    {
+      "criterion_id": 2,
+      "score": 7,
+      "max_score": 10,
+      "justification": "Named roles and milestones exist; acceptance and contingency need definition.",
+      "evidence": "Delivery is planned over 14 weeks with discovery, configuration, migration, acceptance testing and a two-week hypercare period.",
+      "evidence_page": 2
+    },
+    {
+      "criterion_id": 3,
+      "score": 7,
+      "max_score": 10,
+      "justification": "A usable total estimate is present, with material exposure to extra integration days.",
+      "evidence": "The estimated three-year total is USD 312,000; custom integration changes are charged at USD 1,200 per consultant day.",
+      "evidence_page": 2
+    },
+    {
+      "criterion_id": 4,
+      "score": 7,
+      "max_score": 10,
+      "justification": "Several concrete controls are described, but assurance and residency are unresolved.",
+      "evidence": "The service supports SSO, encrypted storage, quarterly access reviews and a 90-day audit trail.",
+      "evidence_page": 3
+    },
+    {
+      "criterion_id": 5,
+      "score": 9,
+      "max_score": 10,
+      "justification": "Extensive relevant project history and specific escalation commitments.",
+      "evidence": "Orbit reports 18 comparable fictional deployments and offers 24/7 critical response within 30 minutes, with named escalation owners.",
+      "evidence_page": 3
+    }
+  ],
+  "risks": [
+    "Integration architecture and effort are unresolved.",
+    "Commercial total may rise with discovery-driven changes.",
+    "Security assurance documents and data region need confirmation."
+  ],
+  "overall_summary": "Strong comparable experience and support, but vague integration commitments weaken technical confidence and cost certainty."
+}

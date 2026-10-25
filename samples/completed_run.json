@@ -1,0 +1,797 @@
+{
+  "schema_version": "1.0",
+  "rfp_run_id": "f67b696b-e3d0-4c50-b7e8-fe357579acb6",
+  "created_at": "2026-10-25T12:12:54.903994+00:00",
+  "status": "completed",
+  "mode": "offline_fixture",
+  "model": "human-authored-demo-v1",
+  "criteria_snapshot": [
+    {
+      "criterion_id": 1,
+      "name": "Technical Capability",
+      "description": "Architecture, integrations, scalability and technical fit",
+      "weight": 30.0,
+      "max_score": 10.0,
+      "is_active": true
+    },
+    {
+      "criterion_id": 2,
+      "name": "Implementation Plan",
+      "description": "Timeline, milestones, staffing, acceptance criteria and risk plan",
+      "weight": 20.0,
+      "max_score": 10.0,
+      "is_active": true
+    },
+    {
+      "criterion_id": 3,
+      "name": "Commercial Value",
+      "description": "Pricing clarity, three-year total cost, assumptions and exclusions",
+      "weight": 20.0,
+      "max_score": 10.0,
+      "is_active": true
+    },
+    {
+      "criterion_id": 4,
+      "name": "Security & Compliance",
+      "description": "Controls, privacy, certifications and auditability; distinguish claims from evidence",
+      "weight": 20.0,
+      "max_score": 10.0,
+      "is_active": true
+    },
+    {
+      "criterion_id": 5,
+      "name": "Support & Experience",
+      "description": "Support coverage, SLA, comparable projects and references",
+      "weight": 10.0,
+      "max_score": 10.0,
+      "is_active": true
+    }
+  ],
+  "suppliers": [
+    {
+      "supplier_name": "NexaWorks",
+      "submission_date": "2026-10-19",
+      "experience_rating": 8.0,
+      "document": {
+        "sha256": "e0fd6fe16d68d45379bd22aaec542c09aca869406a0d5947cd2e867d3b567b8a",
+        "page_count": 3,
+        "pages": [
+          {
+            "page": 1,
+            "text": "NexaWorks | Fictional classroom proposal\n1 / 3\nFICTIONAL SUPPLIER PROPOSAL \u00b7 CLASSROOM USE\nNexaWorks\nBalanced value. Measurable delivery. Accountable support.\n01 / Executive summary\nResponse to the same fictional procurement request: implement a customer-service platform for 250 agents,\nintegrate CRM and ERP, migrate two million records, and provide secure operations and support for three years.\nThe buyer seeks clear delivery, commercial and service commitments. All organizations, projects, assurance\ndocuments and references in this proposal are invented.\nUnderstanding the requirement\nThe buyer needs a single view of service requests, reliable exchange with sales and finance systems, measurable\nmigration acceptance and auditable access to customer information. The proposed scope and its limitations are\nset out below.\nProposed solution\nThe platform integrates CRM and ERP through versioned REST adapters with idempotent retries and a monitored\ndead-letter queue. A containerized service tier supports 500 concurrent agents; staging load tests are included at\n1.5 times that volume. An adapter catalogue records field mappings and transformation owners. Data is\npartitioned by business unit, with an operational dashboard for failed messages. Offline mobile use is outside the\nbase scope.\nSubmitted: 2026-10-19 | Procurement reference: TRAINING-RFP-026"
+          },
+          {
+            "page": 2,
+            "text": "NexaWorks | Fictional classroom proposal\n2 / 3\n02 / Delivery & commercials\nImplementation and milestones\nThe 12-week plan includes signed stage gates at weeks 2, 6, 9 and 12, with named owners, rollback rehearsal\nand a two-week contingency. A RACI assigns the delivery lead, architect, two integration engineers, two\ndevelopers, QA engineer and buyer product owner. Gates cover design approval, tested integrations, migration\nreconciliation and business acceptance. Acceptance requires 99.5% reconciliation, zero open critical defects and\n95% user-test completion. Two migration rehearsals, role-specific training and a four-week hypercare period are\nincluded.\nCommercial offer\nThree-year total cost is USD 288,000, including integration, training, hosting and four weeks of hypercare.\nCost item\nUSD\nBasis\nImplementation\n$108,000\nOne time\nSubscription\n$52,000\nEach year x 3\nMigration\n$16,000\nOne time\nTraining\n$8,000\nOne time\n3-year total\n$288,000\nExcludes taxes\nAssumptions and exclusions\nIncludes 250 agents, CRM and ERP adapters, and two million migrated records. Annual subscription covers\nhosting and support. Prices are fixed for three years; future increases are capped at 5%. Bespoke mobile\ndevelopment and source-system remediation are excluded. Change requests require an agreed estimate and\nwritten buyer approval."
+          },
+          {
+            "page": 3,
+            "text": "NexaWorks | Fictional classroom proposal\n3 / 3\n03 / Assurance & service\nSecurity and compliance\nSecurity includes SAML SSO, MFA for administrators, encryption at rest and in transit, and immutable audit logs\nretained for 180 days. The fictional assurance pack NW-2026 lists a penetration-test remediation summary; a full\nreport is available under NDA in this training scenario. A regional hosting commitment, DPA, 24-hour breach\nnotice and 30-day deletion process are proposed. Quarterly restoration exercises target RPO 4 hours and RTO 8\nhours. No formal ISO certificate is supplied.\nSupport, experience and references\nA dedicated service manager provides 24/7 critical support, a 15-minute response target and a four-hour\nworkaround target. Seven comparable fictional projects include Oak Logistics (280 agents) and Meadow Services\n(240 agents), with reference calls offered during due diligence. Monthly reviews report uptime, backlog and\nincident trends. Named backup staff cover holidays, and a knowledge-transfer package is handed over before\nhypercare ends. Service credits apply to missed response targets.\nRisks and buyer dependencies\nBuyer access to source systems, nominated subject-matter experts and timely test decisions are required. Claims\nin this proposal require verification before award. Full independent assurance documents require due diligence.\nOffline mobile functionality is excluded.\nEvidence limitations\nThis fictional proposal is not an independently verified audit or a real commercial offer. Supporting reference calls,\nassurance documents and contract terms are to be reviewed during due diligence. No real confidential supplier\ninformation is included."
+          }
+        ],
+        "warnings": []
+      },
+      "evaluation": {
+        "supplier_name": "NexaWorks",
+        "criteria": [
+          {
+            "criterion_id": 1,
+            "score": 8.0,
+            "max_score": 10.0,
+            "justification": "Explicit adapter reliability and load targets; offline use is excluded.",
+            "evidence": "The platform integrates CRM and ERP through versioned REST adapters with idempotent retries and a monitored dead-letter queue.",
+            "evidence_page": 1,
+            "evidence_verified": true,
+            "warnings": []
+          },
+          {
+            "criterion_id": 2,
+            "score": 9.0,
+            "max_score": 10.0,
+            "justification": "Named gates, measurable acceptance and contingency make delivery unusually clear.",
+            "evidence": "The 12-week plan includes signed stage gates at weeks 2, 6, 9 and 12, with named owners, rollback rehearsal and a two-week contingency.",
+            "evidence_page": 2,
+            "evidence_verified": true,
+            "warnings": []
+          },
+          {
+            "criterion_id": 3,
+            "score": 8.0,
+            "max_score": 10.0,
+            "justification": "Transparent inclusive total cost with controlled changes and renewal caps.",
+            "evidence": "Three-year total cost is USD 288,000, including integration, training, hosting and four weeks of hypercare.",
+            "evidence_page": 2,
+            "evidence_verified": true,
+            "warnings": []
+          },
+          {
+            "criterion_id": 4,
+            "score": 8.0,
+            "max_score": 10.0,
+            "justification": "Detailed controls and incident terms; certification evidence is not supplied.",
+            "evidence": "Security includes SAML SSO, MFA for administrators, encryption at rest and in transit, and immutable audit logs retained for 180 days.",
+            "evidence_page": 3,
+            "evidence_verified": true,
+            "warnings": []
+          },
+          {
+            "criterion_id": 5,
+            "score": 9.0,
+            "max_score": 10.0,
+            "justification": "Specific response and workaround targets, service management and relevant references.",
+            "evidence": "A dedicated service manager provides 24/7 critical support, a 15-minute response target and a four-hour workaround target.",
+            "evidence_page": 3,
+            "evidence_verified": true,
+            "warnings": []
+          }
+        ],
+        "risks": [
+          "Full independent assurance documents require due diligence.",
+          "Offline mobile functionality is excluded."
+        ],
+        "overall_summary": "Balanced technical and commercial value, with the strongest staged delivery controls and a specific support model.",
+        "warnings": []
+      },
+      "metrics": [
+        {
+          "criterion_id": 1,
+          "score": 8.0,
+          "max_score": 10.0,
+          "justification": "Explicit adapter reliability and load targets; offline use is excluded.",
+          "evidence": "The platform integrates CRM and ERP through versioned REST adapters with idempotent retries and a monitored dead-letter queue.",
+          "evidence_page": 1,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Technical Capability",
+          "weight": 30.0,
+          "weighted_score": 24.0,
+          "benchmark": 9.0,
+          "gap": -1.0,
+          "relative_percent": 88.88888888888889
+        },
+        {
+          "criterion_id": 2,
+          "score": 9.0,
+          "max_score": 10.0,
+          "justification": "Named gates, measurable acceptance and contingency make delivery unusually clear.",
+          "evidence": "The 12-week plan includes signed stage gates at weeks 2, 6, 9 and 12, with named owners, rollback rehearsal and a two-week contingency.",
+          "evidence_page": 2,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Implementation Plan",
+          "weight": 20.0,
+          "weighted_score": 18.0,
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_percent": 100.0
+        },
+        {
+          "criterion_id": 3,
+          "score": 8.0,
+          "max_score": 10.0,
+          "justification": "Transparent inclusive total cost with controlled changes and renewal caps.",
+          "evidence": "Three-year total cost is USD 288,000, including integration, training, hosting and four weeks of hypercare.",
+          "evidence_page": 2,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Commercial Value",
+          "weight": 20.0,
+          "weighted_score": 16.0,
+          "benchmark": 9.0,
+          "gap": -1.0,
+          "relative_percent": 88.88888888888889
+        },
+        {
+          "criterion_id": 4,
+          "score": 8.0,
+          "max_score": 10.0,
+          "justification": "Detailed controls and incident terms; certification evidence is not supplied.",
+          "evidence": "Security includes SAML SSO, MFA for administrators, encryption at rest and in transit, and immutable audit logs retained for 180 days.",
+          "evidence_page": 3,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Security & Compliance",
+          "weight": 20.0,
+          "weighted_score": 16.0,
+          "benchmark": 9.0,
+          "gap": -1.0,
+          "relative_percent": 88.88888888888889
+        },
+        {
+          "criterion_id": 5,
+          "score": 9.0,
+          "max_score": 10.0,
+          "justification": "Specific response and workaround targets, service management and relevant references.",
+          "evidence": "A dedicated service manager provides 24/7 critical support, a 15-minute response target and a four-hour workaround target.",
+          "evidence_page": 3,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Support & Experience",
+          "weight": 10.0,
+          "weighted_score": 9.0,
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_percent": 100.0
+        }
+      ],
+      "absolute_score": 83.0,
+      "ppi": 92.22222222222223,
+      "final_rank": 1,
+      "rank_explanation": "First after sorting by PPI, submission date, experience and name."
+    },
+    {
+      "supplier_name": "Apex Systems",
+      "submission_date": "2026-10-20",
+      "experience_rating": 8.0,
+      "document": {
+        "sha256": "b41a7c7f36b9960730dddf52c59a429fd9309ab32538a47b52017f5925ad0352",
+        "page_count": 3,
+        "pages": [
+          {
+            "page": 1,
+            "text": "Apex Systems | Fictional classroom proposal\n1 / 3\nFICTIONAL SUPPLIER PROPOSAL \u00b7 CLASSROOM USE\nApex Systems\nEnterprise architecture. Strong controls. Premium investment.\n01 / Executive summary\nResponse to the same fictional procurement request: implement a customer-service platform for 250 agents,\nintegrate CRM and ERP, migrate two million records, and provide secure operations and support for three years.\nThe buyer seeks clear delivery, commercial and service commitments. All organizations, projects, assurance\ndocuments and references in this proposal are invented.\nUnderstanding the requirement\nThe buyer needs a single view of service requests, reliable exchange with sales and finance systems, measurable\nmigration acceptance and auditable access to customer information. The proposed scope and its limitations are\nset out below.\nProposed solution\nThe solution uses a modular API gateway, event-driven services and an offline retry queue for CRM and ERP\nintegrations. Two connector prototypes will be demonstrated before build approval. PostgreSQL provides tenant\nisolation; Redis caches read-heavy views. Load tests target 1,000 concurrent agents and a 95th-percentile\nresponse below 500 ms. The design includes versioned REST APIs and a reconciliation dashboard for failed\ntransactions.\nSubmitted: 2026-10-20 | Procurement reference: TRAINING-RFP-026"
+          },
+          {
+            "page": 2,
+            "text": "Apex Systems | Fictional classroom proposal\n2 / 3\n02 / Delivery & commercials\nImplementation and milestones\nDelivery takes 16 weeks: discovery in weeks 1-3, build in weeks 4-10, migration in weeks 11-13 and acceptance in\nweeks 14-16. A delivery manager, two integration engineers, three application developers and a QA lead form the\ncore team. The buyer supplies a product owner and test users. Acceptance requires 98% migration accuracy and\nclosure of critical defects. A two-week contingency sits within the final phase; dedicated training capacity is not\npriced separately.\nCommercial offer\nThree-year total cost is USD 420,000, excluding taxes and buyer-side network upgrades.\nCost item\nUSD\nBasis\nImplementation\n$180,000\nOne time\nSubscription\n$65,000\nEach year x 3\nMigration\n$25,000\nOne time\nTraining\n$20,000\nOne time\n3-year total\n$420,000\nExcludes taxes\nAssumptions and exclusions\nIncludes 250 named agents, two integrations and migration of two million records. Additional integrations cost\nUSD 18,000 each. Subscription includes platform hosting and support. Renewal increases after year three are\ncapped at 6% annually. Travel and buyer hardware are excluded."
+          },
+          {
+            "page": 3,
+            "text": "Apex Systems | Fictional classroom proposal\n3 / 3\n03 / Assurance & service\nSecurity and compliance\nControls include SAML SSO, role-based access, AES-256 storage encryption, TLS 1.3 transport and 365-day\naudit logs. A fictional independent control assessment AS-26-14 lists quarterly access reviews and annual\npenetration testing. This is a training claim, not a real certification. Recovery objectives are RPO 1 hour and RTO\n4 hours, tested every six months. Data stays in the agreed region; a signed DPA and deletion certificate are\nproposed before production.\nSupport, experience and references\nSupport is available 24/7 for critical incidents, with a 30-minute response target and a named service manager.\nNine comparable fictional projects were delivered in five years. Fictional references: Maple Freight (320 agents)\nand Cedar Utilities (210 agents). Reference contact details are intentionally omitted. The support SLA promises a\nresponse, not a guaranteed fix time. Monthly service reviews and quarterly resilience tests are included.\nRisks and buyer dependencies\nBuyer access to source systems, nominated subject-matter experts and timely test decisions are required. Claims\nin this proposal require verification before award. Highest three-year price in this cohort. Training capacity and\nresolution SLA need clarification.\nEvidence limitations\nThis fictional proposal is not an independently verified audit or a real commercial offer. Supporting reference calls,\nassurance documents and contract terms are to be reviewed during due diligence. No real confidential supplier\ninformation is included."
+          }
+        ],
+        "warnings": []
+      },
+      "evaluation": {
+        "supplier_name": "Apex Systems",
+        "criteria": [
+          {
+            "criterion_id": 1,
+            "score": 9.0,
+            "max_score": 10.0,
+            "justification": "Specific integrations, performance targets and reconciliation design.",
+            "evidence": "The solution uses a modular API gateway, event-driven services and an offline retry queue for CRM and ERP integrations.",
+            "evidence_page": 1,
+            "evidence_verified": true,
+            "warnings": []
+          },
+          {
+            "criterion_id": 2,
+            "score": 7.0,
+            "max_score": 10.0,
+            "justification": "Defined stages and acceptance checks, but training detail is limited.",
+            "evidence": "Delivery takes 16 weeks: discovery in weeks 1-3, build in weeks 4-10, migration in weeks 11-13 and acceptance in weeks 14-16.",
+            "evidence_page": 2,
+            "evidence_verified": true,
+            "warnings": []
+          },
+          {
+            "criterion_id": 3,
+            "score": 6.0,
+            "max_score": 10.0,
+            "justification": "Transparent total cost and exclusions, but premium pricing.",
+            "evidence": "Three-year total cost is USD 420,000, excluding taxes and buyer-side network upgrades.",
+            "evidence_page": 2,
+            "evidence_verified": true,
+            "warnings": []
+          },
+          {
+            "criterion_id": 4,
+            "score": 9.0,
+            "max_score": 10.0,
+            "justification": "Concrete identity, encryption, retention and recovery controls; external assurance remains a claim.",
+            "evidence": "Controls include SAML SSO, role-based access, AES-256 storage encryption, TLS 1.3 transport and 365-day audit logs.",
+            "evidence_page": 3,
+            "evidence_verified": true,
+            "warnings": []
+          },
+          {
+            "criterion_id": 5,
+            "score": 8.0,
+            "max_score": 10.0,
+            "justification": "Round-the-clock critical support and comparable projects; resolution commitment is absent.",
+            "evidence": "Support is available 24/7 for critical incidents, with a 30-minute response target and a named service manager.",
+            "evidence_page": 3,
+            "evidence_verified": true,
+            "warnings": []
+          }
+        ],
+        "risks": [
+          "Highest three-year price in this cohort.",
+          "Training capacity and resolution SLA need clarification."
+        ],
+        "overall_summary": "Strong technical and security evidence, with a premium total cost and a moderate delivery schedule.",
+        "warnings": []
+      },
+      "metrics": [
+        {
+          "criterion_id": 1,
+          "score": 9.0,
+          "max_score": 10.0,
+          "justification": "Specific integrations, performance targets and reconciliation design.",
+          "evidence": "The solution uses a modular API gateway, event-driven services and an offline retry queue for CRM and ERP integrations.",
+          "evidence_page": 1,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Technical Capability",
+          "weight": 30.0,
+          "weighted_score": 27.0,
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_percent": 100.0
+        },
+        {
+          "criterion_id": 2,
+          "score": 7.0,
+          "max_score": 10.0,
+          "justification": "Defined stages and acceptance checks, but training detail is limited.",
+          "evidence": "Delivery takes 16 weeks: discovery in weeks 1-3, build in weeks 4-10, migration in weeks 11-13 and acceptance in weeks 14-16.",
+          "evidence_page": 2,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Implementation Plan",
+          "weight": 20.0,
+          "weighted_score": 14.0,
+          "benchmark": 9.0,
+          "gap": -2.0,
+          "relative_percent": 77.77777777777777
+        },
+        {
+          "criterion_id": 3,
+          "score": 6.0,
+          "max_score": 10.0,
+          "justification": "Transparent total cost and exclusions, but premium pricing.",
+          "evidence": "Three-year total cost is USD 420,000, excluding taxes and buyer-side network upgrades.",
+          "evidence_page": 2,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Commercial Value",
+          "weight": 20.0,
+          "weighted_score": 12.0,
+          "benchmark": 9.0,
+          "gap": -3.0,
+          "relative_percent": 66.66666666666667
+        },
+        {
+          "criterion_id": 4,
+          "score": 9.0,
+          "max_score": 10.0,
+          "justification": "Concrete identity, encryption, retention and recovery controls; external assurance remains a claim.",
+          "evidence": "Controls include SAML SSO, role-based access, AES-256 storage encryption, TLS 1.3 transport and 365-day audit logs.",
+          "evidence_page": 3,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Security & Compliance",
+          "weight": 20.0,
+          "weighted_score": 18.0,
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_percent": 100.0
+        },
+        {
+          "criterion_id": 5,
+          "score": 8.0,
+          "max_score": 10.0,
+          "justification": "Round-the-clock critical support and comparable projects; resolution commitment is absent.",
+          "evidence": "Support is available 24/7 for critical incidents, with a 30-minute response target and a named service manager.",
+          "evidence_page": 3,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Support & Experience",
+          "weight": 10.0,
+          "weighted_score": 8.0,
+          "benchmark": 9.0,
+          "gap": -1.0,
+          "relative_percent": 88.88888888888889
+        }
+      ],
+      "absolute_score": 79.0,
+      "ppi": 87.77777777777777,
+      "final_rank": 2,
+      "rank_explanation": "NexaWorks precedes this supplier by higher PPI."
+    },
+    {
+      "supplier_name": "Orbit Digital",
+      "submission_date": "2026-10-17",
+      "experience_rating": 9.0,
+      "document": {
+        "sha256": "203d6677ae21d01db4675121ea55ee48c3458536e4d60262bf21d6092cafbd8d",
+        "page_count": 3,
+        "pages": [
+          {
+            "page": 1,
+            "text": "Orbit Digital | Fictional classroom proposal\n1 / 3\nFICTIONAL SUPPLIER PROPOSAL \u00b7 CLASSROOM USE\nOrbit Digital\nEstablished delivery history. Flexible integration scope.\n01 / Executive summary\nResponse to the same fictional procurement request: implement a customer-service platform for 250 agents,\nintegrate CRM and ERP, migrate two million records, and provide secure operations and support for three years.\nThe buyer seeks clear delivery, commercial and service commitments. All organizations, projects, assurance\ndocuments and references in this proposal are invented.\nUnderstanding the requirement\nThe buyer needs a single view of service requests, reliable exchange with sales and finance systems, measurable\nmigration acceptance and auditable access to customer information. The proposed scope and its limitations are\nset out below.\nProposed solution\nThe proposal offers a configurable customer-service platform; CRM and ERP integration methods will be agreed\nduring discovery. The platform supports queue management, dashboards and a searchable knowledge base. The\narchitecture diagram is described but not supplied. The proposal does not commit to API protocols, message retry\nsemantics, migration mappings or concurrency targets. Orbit expects its integration partner to confirm feasibility\nafter a paid discovery workshop.\nSubmitted: 2026-10-17 | Procurement reference: TRAINING-RFP-026"
+          },
+          {
+            "page": 2,
+            "text": "Orbit Digital | Fictional classroom proposal\n2 / 3\n02 / Delivery & commercials\nImplementation and milestones\nDelivery is planned over 14 weeks with discovery, configuration, migration, acceptance testing and a two-week\nhypercare period. A senior programme manager, solution consultant, two configuration specialists and one tester\nare allocated. Integration engineers are subject to discovery outcomes. Milestones occur at weeks 3, 7, 11 and 14;\nbuyer sign-off is required at each. Acceptance criteria are to be negotiated. A risk register is reviewed weekly but\nschedule contingency is not quantified.\nCommercial offer\nThe estimated three-year total is USD 312,000; custom integration changes are charged at USD 1,200 per\nconsultant day.\nCost item\nUSD\nBasis\nImplementation\n$120,000\nOne time estimate\nSubscription\n$58,000\nEach year x 3\nMigration\n$12,000\nOne time estimate\nTraining\n$6,000\nOne time\n3-year total\n$312,000\nBefore change requests\nAssumptions and exclusions\nIncludes 250 agents and ten integration consulting days. Additional integration days require written approval.\nHosting and business-hours service management are included; critical support is covered by the subscription.\nTaxes and on-site travel are excluded. No maximum integration overrun or renewal increase is committed."
+          },
+          {
+            "page": 3,
+            "text": "Orbit Digital | Fictional classroom proposal\n3 / 3\n03 / Assurance & service\nSecurity and compliance\nThe service supports SSO, encrypted storage, quarterly access reviews and a 90-day audit trail. Orbit describes\nan annual external assessment, but no report identifier or certification is included. Backups are retained for 30\ndays and restoration is tested annually. RTO is one business day; RPO is 24 hours. A standard DPA is offered,\nwith regional storage location to be agreed. Subprocessor details are available on request.\nSupport, experience and references\nOrbit reports 18 comparable fictional deployments and offers 24/7 critical response within 30 minutes, with named\nescalation owners. Three fictional references are offered: Birch Manufacturing (450 agents), Elm Transport (310\nagents) and Willow Care (290 agents). Each reference description states implementation dates and scope.\nQuarterly training, monthly reviews and a dedicated account lead are included. A four-hour workaround objective\nis stated for critical incidents.\nRisks and buyer dependencies\nBuyer access to source systems, nominated subject-matter experts and timely test decisions are required. Claims\nin this proposal require verification before award. Integration architecture and effort are unresolved. Commercial\ntotal may rise with discovery-driven changes. Security assurance documents and data region need confirmation.\nEvidence limitations\nThis fictional proposal is not an independently verified audit or a real commercial offer. Supporting reference calls,\nassurance documents and contract terms are to be reviewed during due diligence. No real confidential supplier\ninformation is included."
+          }
+        ],
+        "warnings": []
+      },
+      "evaluation": {
+        "supplier_name": "Orbit Digital",
+        "criteria": [
+          {
+            "criterion_id": 1,
+            "score": 5.0,
+            "max_score": 10.0,
+            "justification": "Core platform scope is stated, but integration methods and capacity targets are deferred.",
+            "evidence": "The proposal offers a configurable customer-service platform; CRM and ERP integration methods will be agreed during discovery.",
+            "evidence_page": 1,
+            "evidence_verified": true,
+            "warnings": []
+          },
+          {
+            "criterion_id": 2,
+            "score": 7.0,
+            "max_score": 10.0,
+            "justification": "Named roles and milestones exist; acceptance and contingency need definition.",
+            "evidence": "Delivery is planned over 14 weeks with discovery, configuration, migration, acceptance testing and a two-week hypercare period.",
+            "evidence_page": 2,
+            "evidence_verified": true,
+            "warnings": []
+          },
+          {
+            "criterion_id": 3,
+            "score": 7.0,
+            "max_score": 10.0,
+            "justification": "A usable total estimate is present, with material exposure to extra integration days.",
+            "evidence": "The estimated three-year total is USD 312,000; custom integration changes are charged at USD 1,200 per consultant day.",
+            "evidence_page": 2,
+            "evidence_verified": true,
+            "warnings": []
+          },
+          {
+            "criterion_id": 4,
+            "score": 7.0,
+            "max_score": 10.0,
+            "justification": "Several concrete controls are described, but assurance and residency are unresolved.",
+            "evidence": "The service supports SSO, encrypted storage, quarterly access reviews and a 90-day audit trail.",
+            "evidence_page": 3,
+            "evidence_verified": true,
+            "warnings": []
+          },
+          {
+            "criterion_id": 5,
+            "score": 9.0,
+            "max_score": 10.0,
+            "justification": "Extensive relevant project history and specific escalation commitments.",
+            "evidence": "Orbit reports 18 comparable fictional deployments and offers 24/7 critical response within 30 minutes, with named escalation owners.",
+            "evidence_page": 3,
+            "evidence_verified": true,
+            "warnings": []
+          }
+        ],
+        "risks": [
+          "Integration architecture and effort are unresolved.",
+          "Commercial total may rise with discovery-driven changes.",
+          "Security assurance documents and data region need confirmation."
+        ],
+        "overall_summary": "Strong comparable experience and support, but vague integration commitments weaken technical confidence and cost certainty.",
+        "warnings": []
+      },
+      "metrics": [
+        {
+          "criterion_id": 1,
+          "score": 5.0,
+          "max_score": 10.0,
+          "justification": "Core platform scope is stated, but integration methods and capacity targets are deferred.",
+          "evidence": "The proposal offers a configurable customer-service platform; CRM and ERP integration methods will be agreed during discovery.",
+          "evidence_page": 1,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Technical Capability",
+          "weight": 30.0,
+          "weighted_score": 15.0,
+          "benchmark": 9.0,
+          "gap": -4.0,
+          "relative_percent": 55.55555555555556
+        },
+        {
+          "criterion_id": 2,
+          "score": 7.0,
+          "max_score": 10.0,
+          "justification": "Named roles and milestones exist; acceptance and contingency need definition.",
+          "evidence": "Delivery is planned over 14 weeks with discovery, configuration, migration, acceptance testing and a two-week hypercare period.",
+          "evidence_page": 2,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Implementation Plan",
+          "weight": 20.0,
+          "weighted_score": 14.0,
+          "benchmark": 9.0,
+          "gap": -2.0,
+          "relative_percent": 77.77777777777777
+        },
+        {
+          "criterion_id": 3,
+          "score": 7.0,
+          "max_score": 10.0,
+          "justification": "A usable total estimate is present, with material exposure to extra integration days.",
+          "evidence": "The estimated three-year total is USD 312,000; custom integration changes are charged at USD 1,200 per consultant day.",
+          "evidence_page": 2,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Commercial Value",
+          "weight": 20.0,
+          "weighted_score": 14.0,
+          "benchmark": 9.0,
+          "gap": -2.0,
+          "relative_percent": 77.77777777777777
+        },
+        {
+          "criterion_id": 4,
+          "score": 7.0,
+          "max_score": 10.0,
+          "justification": "Several concrete controls are described, but assurance and residency are unresolved.",
+          "evidence": "The service supports SSO, encrypted storage, quarterly access reviews and a 90-day audit trail.",
+          "evidence_page": 3,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Security & Compliance",
+          "weight": 20.0,
+          "weighted_score": 14.0,
+          "benchmark": 9.0,
+          "gap": -2.0,
+          "relative_percent": 77.77777777777777
+        },
+        {
+          "criterion_id": 5,
+          "score": 9.0,
+          "max_score": 10.0,
+          "justification": "Extensive relevant project history and specific escalation commitments.",
+          "evidence": "Orbit reports 18 comparable fictional deployments and offers 24/7 critical response within 30 minutes, with named escalation owners.",
+          "evidence_page": 3,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Support & Experience",
+          "weight": 10.0,
+          "weighted_score": 9.0,
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_percent": 100.0
+        }
+      ],
+      "absolute_score": 66.0,
+      "ppi": 73.33333333333333,
+      "final_rank": 3,
+      "rank_explanation": "Apex Systems precedes this supplier by higher PPI."
+    },
+    {
+      "supplier_name": "BrightPath Tech",
+      "submission_date": "2026-10-18",
+      "experience_rating": 3.0,
+      "document": {
+        "sha256": "4ae86538897feb74a6bcdb6ee4ef72e6dd3dfb6d37b854375329d284c9d28e4d",
+        "page_count": 3,
+        "pages": [
+          {
+            "page": 1,
+            "text": "BrightPath Tech | Fictional classroom proposal\n1 / 3\nFICTIONAL SUPPLIER PROPOSAL \u00b7 CLASSROOM USE\nBrightPath Tech\nLean scope. Fast launch. Lowest initial commitment.\n01 / Executive summary\nResponse to the same fictional procurement request: implement a customer-service platform for 250 agents,\nintegrate CRM and ERP, migrate two million records, and provide secure operations and support for three years.\nThe buyer seeks clear delivery, commercial and service commitments. All organizations, projects, assurance\ndocuments and references in this proposal are invented.\nUnderstanding the requirement\nThe buyer needs a single view of service requests, reliable exchange with sales and finance systems, measurable\nmigration acceptance and auditable access to customer information. The proposed scope and its limitations are\nset out below.\nProposed solution\nA hosted web application will provide ticket queues, email ingestion and a standard CRM connector; ERP\nintegration uses a nightly CSV export. The platform targets 150 concurrent users at launch. The proposal does not\ninclude a load-test report or offline processing design. A single application instance serves the pilot. The buyer\nmust supply a clean ERP export format, and changes to its format are billable. A public API is planned but not\ncommitted in the first release.\nSubmitted: 2026-10-18 | Procurement reference: TRAINING-RFP-026"
+          },
+          {
+            "page": 2,
+            "text": "BrightPath Tech | Fictional classroom proposal\n2 / 3\n02 / Delivery & commercials\nImplementation and milestones\nThe proposed eight-week schedule allocates one week to discovery, four to configuration, two to testing and one\nto launch. The team consists of one project lead, two full-stack developers and a part-time tester. Buyer feedback\nis required within one business day. There is no explicit migration reconciliation threshold or contingency\nallocation. User training consists of two remote sessions. A slip in buyer decisions moves the go-live date.\nCommercial offer\nThree-year total cost is USD 156,000, including a fixed implementation fee and three annual subscriptions.\nCost item\nUSD\nBasis\nImplementation\n$45,000\nOne time\nSubscription\n$35,000\nEach year x 3\nMigration\n$6,000\nOne time\nTraining\n$0\nTwo sessions included\n3-year total\n$156,000\nExcludes taxes\nAssumptions and exclusions\nIncludes 150 named users and one standard connector. Each additional user costs USD 12 per month. Historical\ndata cleansing is the buyer's responsibility. ERP CSV scripting is included; a real-time ERP connector is excluded.\nTravel, taxes and bespoke reporting are excluded. Subscription prices are fixed for the initial three-year term."
+          },
+          {
+            "page": 3,
+            "text": "BrightPath Tech | Fictional classroom proposal\n3 / 3\n03 / Assurance & service\nSecurity and compliance\nThe application uses HTTPS and daily backups; access is controlled by passwords and administrator-managed\nuser roles. No formal certification, penetration-test report, SSO commitment or audit retention period is supplied.\nBackup storage location and restoration time remain to be agreed. BrightPath states that a data processing\nagreement can be negotiated after selection. The proposal does not specify breach notification time or regional\nhosting boundaries.\nSupport, experience and references\nSupport is provided on business days from 09:00 to 17:00, with a one-business-day response target. Two fictional\nsmall-business deployments are described, each with fewer than 50 users. The only fictional reference, Pine\nRetail, has not agreed to a reference call. Out-of-hours coverage is a separately priced option and no rate is\nprovided. Product documentation and recorded training are included.\nRisks and buyer dependencies\nBuyer access to source systems, nominated subject-matter experts and timely test decisions are required. Claims\nin this proposal require verification before award. Security and compliance evidence is limited. Aggressive timeline\nhas no explicit contingency. Limited experience at the requested scale.\nEvidence limitations\nThis fictional proposal is not an independently verified audit or a real commercial offer. Supporting reference calls,\nassurance documents and contract terms are to be reviewed during due diligence. No real confidential supplier\ninformation is included."
+          }
+        ],
+        "warnings": []
+      },
+      "evaluation": {
+        "supplier_name": "BrightPath Tech",
+        "criteria": [
+          {
+            "criterion_id": 1,
+            "score": 6.0,
+            "max_score": 10.0,
+            "justification": "Core functions are covered but ERP integration is batch-only and scale evidence is limited.",
+            "evidence": "A hosted web application will provide ticket queues, email ingestion and a standard CRM connector; ERP integration uses a nightly CSV export.",
+            "evidence_page": 1,
+            "evidence_verified": true,
+            "warnings": []
+          },
+          {
+            "criterion_id": 2,
+            "score": 6.0,
+            "max_score": 10.0,
+            "justification": "A clear short schedule exists, but contingency and acceptance thresholds are missing.",
+            "evidence": "The proposed eight-week schedule allocates one week to discovery, four to configuration, two to testing and one to launch.",
+            "evidence_page": 2,
+            "evidence_verified": true,
+            "warnings": []
+          },
+          {
+            "criterion_id": 3,
+            "score": 9.0,
+            "max_score": 10.0,
+            "justification": "Lowest transparent three-year price; exclusions should still be priced before award.",
+            "evidence": "Three-year total cost is USD 156,000, including a fixed implementation fee and three annual subscriptions.",
+            "evidence_page": 2,
+            "evidence_verified": true,
+            "warnings": []
+          },
+          {
+            "criterion_id": 4,
+            "score": 3.0,
+            "max_score": 10.0,
+            "justification": "Only basic transport, backup and role controls are specified.",
+            "evidence": "The application uses HTTPS and daily backups; access is controlled by passwords and administrator-managed user roles.",
+            "evidence_page": 3,
+            "evidence_verified": true,
+            "warnings": []
+          },
+          {
+            "criterion_id": 5,
+            "score": 4.0,
+            "max_score": 10.0,
+            "justification": "Business-hours response and small reference projects provide limited enterprise assurance.",
+            "evidence": "Support is provided on business days from 09:00 to 17:00, with a one-business-day response target.",
+            "evidence_page": 3,
+            "evidence_verified": true,
+            "warnings": []
+          }
+        ],
+        "risks": [
+          "Security and compliance evidence is limited.",
+          "Aggressive timeline has no explicit contingency.",
+          "Limited experience at the requested scale."
+        ],
+        "overall_summary": "Lowest price and a short schedule, offset by limited compliance detail, integration depth and support coverage.",
+        "warnings": []
+      },
+      "metrics": [
+        {
+          "criterion_id": 1,
+          "score": 6.0,
+          "max_score": 10.0,
+          "justification": "Core functions are covered but ERP integration is batch-only and scale evidence is limited.",
+          "evidence": "A hosted web application will provide ticket queues, email ingestion and a standard CRM connector; ERP integration uses a nightly CSV export.",
+          "evidence_page": 1,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Technical Capability",
+          "weight": 30.0,
+          "weighted_score": 18.0,
+          "benchmark": 9.0,
+          "gap": -3.0,
+          "relative_percent": 66.66666666666667
+        },
+        {
+          "criterion_id": 2,
+          "score": 6.0,
+          "max_score": 10.0,
+          "justification": "A clear short schedule exists, but contingency and acceptance thresholds are missing.",
+          "evidence": "The proposed eight-week schedule allocates one week to discovery, four to configuration, two to testing and one to launch.",
+          "evidence_page": 2,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Implementation Plan",
+          "weight": 20.0,
+          "weighted_score": 12.0,
+          "benchmark": 9.0,
+          "gap": -3.0,
+          "relative_percent": 66.66666666666667
+        },
+        {
+          "criterion_id": 3,
+          "score": 9.0,
+          "max_score": 10.0,
+          "justification": "Lowest transparent three-year price; exclusions should still be priced before award.",
+          "evidence": "Three-year total cost is USD 156,000, including a fixed implementation fee and three annual subscriptions.",
+          "evidence_page": 2,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Commercial Value",
+          "weight": 20.0,
+          "weighted_score": 18.0,
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_percent": 100.0
+        },
+        {
+          "criterion_id": 4,
+          "score": 3.0,
+          "max_score": 10.0,
+          "justification": "Only basic transport, backup and role controls are specified.",
+          "evidence": "The application uses HTTPS and daily backups; access is controlled by passwords and administrator-managed user roles.",
+          "evidence_page": 3,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Security & Compliance",
+          "weight": 20.0,
+          "weighted_score": 6.0,
+          "benchmark": 9.0,
+          "gap": -6.0,
+          "relative_percent": 33.333333333333336
+        },
+        {
+          "criterion_id": 5,
+          "score": 4.0,
+          "max_score": 10.0,
+          "justification": "Business-hours response and small reference projects provide limited enterprise assurance.",
+          "evidence": "Support is provided on business days from 09:00 to 17:00, with a one-business-day response target.",
+          "evidence_page": 3,
+          "evidence_verified": true,
+          "warnings": [],
+          "criterion_name": "Support & Experience",
+          "weight": 10.0,
+          "weighted_score": 4.0,
+          "benchmark": 9.0,
+          "gap": -5.0,
+          "relative_percent": 44.44444444444444
+        }
+      ],
+      "absolute_score": 58.0,
+      "ppi": 64.44444444444444,
+      "final_rank": 4,
+      "rank_explanation": "Orbit Digital precedes this supplier by higher PPI."
+    }
+  ],
+  "failures": [],
+  "trace": [
+    {
+      "supplier_name": "Apex Systems",
+      "steps": [
+        "document_extracted",
+        "evaluation_received_attempt_1",
+        "validated"
+      ],
+      "attempts": 1
+    },
+    {
+      "supplier_name": "BrightPath Tech",
+      "steps": [
+        "document_extracted",
+        "evaluation_received_attempt_1",
+        "validated"
+      ],
+      "attempts": 1
+    },
+    {
+      "supplier_name": "NexaWorks",
+      "steps": [
+        "document_extracted",
+        "evaluation_received_attempt_1",
+        "validated"
+      ],
+      "attempts": 1
+    },
+    {
+      "supplier_name": "Orbit Digital",
+      "steps": [
+        "document_extracted",
+        "evaluation_received_attempt_1",
+        "validated"
+      ],
+      "attempts": 1
+    },
+    {
+      "steps": [
+        "deterministic_scoring",
+        "peer_benchmarking",
+        "stable_ranking",
+        "persisted"
+      ]
+    }
+  ],
+  "rules": {
+    "zero_benchmark": "relative_percent=0; weight retained in PPI denominator",
+    "tie_break": [
+      "PPI descending (unrounded)",
+      "submission_date ascending",
+      "experience_rating descending",
+      "supplier_name ascending (case-insensitive)"
+    ],
+    "missing_or_unsupported_evidence": "score=0 with warning",
+    "maximum_attempts_per_supplier": 3
+  },
+  "finished_at": "2026-10-25T12:12:54.928562+00:00"
+}

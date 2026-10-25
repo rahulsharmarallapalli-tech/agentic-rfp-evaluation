@@ -1,0 +1,50 @@
+{
+  "supplier_name": "NexaWorks",
+  "criteria": [
+    {
+      "criterion_id": 1,
+      "score": 8,
+      "max_score": 10,
+      "justification": "Explicit adapter reliability and load targets; offline use is excluded.",
+      "evidence": "The platform integrates CRM and ERP through versioned REST adapters with idempotent retries and a monitored dead-letter queue.",
+      "evidence_page": 1
+    },
+    {
+      "criterion_id": 2,
+      "score": 9,
+      "max_score": 10,
+      "justification": "Named gates, measurable acceptance and contingency make delivery unusually clear.",
+      "evidence": "The 12-week plan includes signed stage gates at weeks 2, 6, 9 and 12, with named owners, rollback rehearsal and a two-week contingency.",
+      "evidence_page": 2
+    },
+    {
+      "criterion_id": 3,
+      "score": 8,
+      "max_score": 10,
+      "justification": "Transparent inclusive total cost with controlled changes and renewal caps.",
+      "evidence": "Three-year total cost is USD 288,000, including integration, training, hosting and four weeks of hypercare.",
+      "evidence_page": 2
+    },
+    {
+      "criterion_id": 4,
+      "score": 8,
+      "max_score": 10,
+      "justification": "Detailed controls and incident terms; certification evidence is not supplied.",
+      "evidence": "Security includes SAML SSO, MFA for administrators, encryption at rest and in transit, and immutable audit logs retained for 180 days.",
+      "evidence_page": 3
+    },
+    {
+      "criterion_id": 5,
+      "score": 9,
+      "max_score": 10,
+      "justification": "Specific response and workaround targets, service management and relevant references.",
+      "evidence": "A dedicated service manager provides 24/7 critical support, a 15-minute response target and a four-hour workaround target.",
+      "evidence_page": 3
+    }
+  ],
+  "risks": [
+    "Full independent assurance documents require due diligence.",
+    "Offline mobile functionality is excluded."
+  ],
+  "overall_summary": "Balanced technical and commercial value, with the strongest staged delivery controls and a specific support model."
+}
