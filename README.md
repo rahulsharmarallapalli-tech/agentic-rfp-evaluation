@@ -27,6 +27,8 @@ The app defaults to `gemini-2.5-flash`; the model field is editable because acco
 
 ## Architecture
 
+Design documents: [High-level design](docs/HLD.md) · [Low-level design and SQL schema](docs/LLD.md) · [Rubric traceability](docs/RUBRIC.md).
+
 ```mermaid
 flowchart LR
     UI[Streamlit: PDFs + metadata] --> O[Python Orchestrator]
